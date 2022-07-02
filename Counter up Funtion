@@ -1,0 +1,68 @@
+/*""Here is the CDN that Add in the Main Link.""*/
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+/*""Here is the Script That write in the Script part.""*/
+
+<script>
+  $(".count").each(function () {
+  $(this)
+    .prop("Counter", 1)
+    .animate(
+      {
+        Counter: $(this).text()
+      },
+      {
+        duration: 2000,
+        easing: "swing",
+        step: function (now) {
+          $(this).text(Math.ceil(now));
+        }
+      }
+    );
+});
+
+</script>
+
+
+
+/*""Here is the Html code That write in the Html part.""*/
+
+ <section class="Counterup">
+        <h5 class="text-center font-weight-bold text-uppercase">more than 2,000 website created</h5>
+<div class="container d-flex justify-content-around align-item-center text-center ">
+    <div>
+    <h1 class="count">1500</h1>
+    <p>CMS instalation</p>
+    </div>
+    <div>
+    <h1 class="count">2500</h1>
+    <p>Award Won</p>
+    </div>
+    <div>
+    <h1 class="count">700</h1>
+    <p>Happy Client</p> 
+    </div>
+    <div>
+    <h1 class="count">500</h1>
+    <p>Working on</p>
+    </div>
+</div>
+</section>
+
+
+/*""Here is the Heading CSS code That write in the CSS.""*/
+
+.Counterup h5{
+padding-top: 90px ;
+padding-bottom: 20px;
+font-size: 1.0rem;
+margin-left: 20px 0 15px 0;
+margin-top: 15px;
+font-weight: bolder;
+word-spacing: 4px;
+line-height: 1.1;
+}
+
